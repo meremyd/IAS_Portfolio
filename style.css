@@ -168,7 +168,8 @@ nav{
 }
 
 .rectangle1{
-    width: 840px;
+    width: 80%;
+    max-width: 840px;
     height: 120px;
     background-color: #838383;
     position:absolute;
@@ -206,7 +207,8 @@ nav{
 }
 
 .rectangle2{
-    width: 840px;
+    width: 80%;
+    max-width: 840px;
     height: 120px;
     background-color: #ad9d9d;
     position:absolute;
@@ -247,7 +249,8 @@ nav{
 }
 
 .rectangle3{
-    width: 907px;
+    width: 80%;
+    max-width: 907px;
     height: 120px;
     background-color: #d9adad;
     position:absolute;
