@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&family=Judson:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rsvp.css">
+</head>
+
+<body>
+ 
+  <button type="button" class="mt-3" data-bs-toggle="modal" data-bs-target="#formModal">
+    RSVP Form
+  </button>
+
+  
+  <div class="modal" id="formModal"> 
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+           <header>
+          <div class="row">
+            <div class="col-6">
+                <h2 class="text-center mt-3">RSVP</h2> <h3 class="text-center text-muted">Form</h3> <h5 class="text-center blockquote-footer mt-2"> Please let us know if you will be able to make it. </h5>
+            </div>
+              <div class="col-6"> <img src="img/rsvplogo.png" class="w-100 h-100 rounded float-end" alt="rsvp logo" />
+              </div>
+          </div>
+         
+        </header>
+           <hr>
+          <form id="supportTicketForm" onsubmit="handleSubmit(event)">
+              
+             <div class="row g-3 mb-3">
+               <label>Name:</label>
+               <div class="col-md-4">
+                  <input type="text" class="form-control" id="name" name="name" oninput="preventSpaces(this)"  placeholder="Last Name" required>
+                  </div>
+                 
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" id="name" name="name" oninput="preventSpaces(this)"  placeholder="First Name" required>
+                   </div>
+                  
+                  <div class="col-md-4">  <input type="text" class="form-control" id="name" name="name" oninput="preventSpaces(this)"  placeholder="Middle Name" required>
+                  </div>
+               </div>
+           
+           <div class="row g-3 mb-3">
+             <label>Contact Information:</label>
+
+             <div class="col-md-6">
+              <input type="text" class="form-control" id="contact" name="contact" oninput="preventSpaces(this)" placeholder="Enter phone number" required>
+             </div>
+
+             <div class="col-md-6">
+               <input type="email" class="form-control" id="contact" name="contact" oninput="preventSpaces(this)" placeholder="Enter email address" required>
+             </div>
+          
+             </div>
+               <hr>
+            
+               <div class="mb-3 p-1">
+                <p>Will you be attending the event?</p>
+                <input type="radio" id="yes" name="attendance" value="yes" required>
+                <label for="yes">Yes, I'll be there.</label><br>
+                <input type="radio" id="no" name="attendance" value="no" required>
+                <label for="no">Sorry, I can't make it.</label>
+            </div>
+
+            <hr>
+
+            <div class="mb-3">
+              <label for="description" class="form-label">Comments or Questions: </label>
+              <textarea class="form-control" id="comment" name="comments" maxlength="200" oninput="preventSpaces(this)" rows="4"></textarea>
+          </div>
+            
+            
+           <div>
+            <button type="submit" class="mt-3">Submit</button>
+           </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="thankYouModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content1">
+        <div class="tyModal-body">
+          <div class="bgimg">
+          <header>
+            <h5 class="text-center">Thank You!</h5>
+          </header>
+          <p> Thank you for filling out the form! <br> <br>  We appreciate your response and look forward to seeing you at the event.</p>
+         
+          <div>
+          <button type="tyBtn" class="mt-3" data-bs-dismiss="modal" aria-label="Close"> Okay</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="rsvp.js"></script>
+    
+</body>
+
+</html>

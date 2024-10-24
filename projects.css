@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    font-family: 'Castoro', serif; 
+}
+
+.navbar-brand {
+    font-size: 300%; 
+    margin-left: -2%;
+}
+
+.navbar-brand .bi-strava{
+    font-size: 70%;
+}
+
+.nav-item {
+    font-size: 130%; 
+}
+
+nav{
+    border-bottom: 1px solid;
+
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #ceddec; 
+}
+
+.navbar.active {
+    background-color: rgb(219, 232, 245); 
+}
+
+
+.design{
+    margin-top: auto; 
+    justify-content: center; 
+    position: relative;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle1 {
+    height: 350px; 
+    width: 350px;
+    background-color: #838383;
+    top: 60%;
+    left: -5%;
+    transform: translateY(-100%);
+    filter: blur(5px);
+}
+
+.circle2 {
+    height: 200px;
+    width: 200px;
+    background-color: #ad9d9d;
+    top: 10%;
+    left: 23%;
+    transform: translateY(-280%);
+    filter: blur(5px);
+}
+
+.circle3 {
+    height: 150px;
+    width: 150px;
+    background-color: #d9adad;
+    margin-top: -100px;
+    top: 0%;
+    left: 10%;
+    transform: translateY(-450%);
+    filter: blur(5px);
+}
+
+.circle4 {
+    height: 100px;
+    width: 100px;
+    background-color: #fccbcb;
+    top: 0%;
+    left: 20%;
+    transform: translateY(-850%);
+    filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+    /* Styles for iPhone 12 Pro */
+   
+    .navbar-brand {
+        font-size: 150%; 
+        margin-left: 1%;
+    }
+
+
+.color1, .color2, .color3, .color4{
+    border-radius: 50%;
+    width: 18px;
+    height:18px;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.322);
+}
+
+
+    .circle1 {
+        height: 300px; 
+        width: 300px;
+        background-color: #838383;
+        top: 80%;
+        left: -10%;
+        transform: translateY(-200%);
+        filter: blur(5px);
+    }
+    
+    .circle2 {
+        height: 150px;
+        width: 150px;
+        background-color: #ad9d9d;
+        top: 1%;
+        left: 50%;
+        transform: translateY(-350%);
+        filter: blur(5px);
+    }
+    
+    .circle3 {
+        height: 80px;
+        width: 80px;
+        background-color: #d9adad;
+        margin-top: -100px;
+        top: 0%;
+        left: 2%;
+        transform: translateY(-1050%);
+        filter: blur(5px);
+    }
+    
+    .circle4 {
+        height: 50px;
+        width: 50px;
+        background-color: #fccbcb;
+        top: 0%;
+        left: 30%;
+        transform: translateY(-2010%);
+        filter: blur(5px);
+    }
+
+
+    
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 810px) and (max-height: 1080px) {
+    /* Styles for iPad */
+   
+
+    .navbar-brand {
+        font-size: 230%; 
+        margin-left: -2%;
+    }
+
+    .color1, .color2, .color3, .color4{
+        border-radius: 50%;
+        width: 45px;
+        height:45px;
+        box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.322);
+    }
+
+    .circle1 {
+        height: 350px; 
+        width: 350px;
+        background-color: #838383;
+        top: 80%;
+        left: -10%;
+        transform: translateY(-50%);
+        filter: blur(5px);
+    }
+    
+    .circle2 {
+        height: 200px;
+        width: 200px;
+        background-color: #ad9d9d;
+        top: 1%;
+        left: 23%;
+        transform: translateY(-230%);
+        filter: blur(5px);
+    }
+    
+    .circle3 {
+        height: 150px;
+        width: 150px;
+        background-color: #d9adad;
+        margin-top: -100px;
+        top: 0%;
+        left: 2%;
+        transform: translateY(-350%);
+        filter: blur(5px);
+    }
+    
+    .circle4 {
+        height: 100px;
+        width: 100px;
+        background-color: #fccbcb;
+        top: 0%;
+        left: 20%;
+        transform: translateY(-710%);
+        filter: blur(5px);
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1440px) and (min-height: 900px) and (max-height: 900px) {
+    .color1, .color2, .color3, .color4{
+        border-radius: 50%;
+        width: 45px;
+        height:45px;
+        box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.322);
+    }
+
+    .circle1 {
+        height: 350px; 
+        width: 350px;
+        background-color: #838383;
+        top: 80%;
+        left: -5%;
+        transform: translateY(-80%);
+        filter: blur(5px);
+    }
+    
+    .circle2 {
+        height: 200px;
+        width: 200px;
+        background-color: #ad9d9d;
+        top: 1%;
+        left: 23%;
+        transform: translateY(-180%);
+        filter: blur(5px);
+    }
+    
+    .circle3 {
+        height: 150px;
+        width: 150px;
+        background-color: #d9adad;
+        margin-top: -100px;
+        top: 0%;
+        left: 2%;
+        transform: translateY(-400%);
+        filter: blur(5px);
+    }
+    
+    .circle4 {
+        height: 100px;
+        width: 100px;
+        background-color: #fccbcb;
+        top: 0%;
+        left: 20%;
+        transform: translateY(-780%);
+        filter: blur(5px);
+    }
+    
+
+}
+

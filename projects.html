@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
+    <title>Projects</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top bg-body-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> c<i class="bi bi-strava"></i>ms </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <div class="container2">
+
+          <br><br><br>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5 mt-5">
+                <h2 class="fw-bold">PROJECTS</h2>
+                
+              </div>
+            </div>  
+          </div>
+     
+          <div class="row justify-content-center p-5">
+    
+           <div class="col-12 col-md-6 col-lg-4">
+             <div class="about text-center bg-secondary pb-2 p-3">
+              <div class= "about-body text-dark">
+               <div class="img-area mb-4">
+                <img src="img/proj1.png" alt="" class="img-fluid">
+               </img>
+              </div>
+               <h3 class="about-title fw-bold"> Customer Support Ticket </h3>
+               <p> PROJECT 1 </p>
+                <a href="cst.html">
+               <button class="btn bg-light text-dark">Open</button>
+               </a>  
+             </div>
+           </div>
+         </div>
+     
+   
+            <div class="col-12 col-md-6 col-lg-4">
+             <div class="about text-center bg-secondary pb-2 p-3">
+              <div class= "about-body text-dark">
+               <div class="img-area mb-4">
+                <img src="img/proj2.png" alt="" class="img-fluid">
+               </img>
+              </div>
+               <h3 class="about-title fw-bold"> RSVP Form </h3>
+               <p> PROJECT 2 </p>
+                <a href="rsvp.html">
+               <button class="btn bg-light text-dark">Open</button>
+               </a>   
+             </div>
+           </div>
+          </div>
+     
+        </div>
+
+        <div class="design">
+            <div class="position-relative d-flex">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <span class="circle4"></span>
+            </div>
+
+
+        </div>
+  
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+          const navbar = document.querySelector('.navbar');
+      
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 50) { 
+                  navbar.classList.add('scrolled');
+              } else {
+                  navbar.classList.remove('scrolled');
+              }
+          });
+      
+          const navbarToggler = document.querySelector('.navbar-toggler');
+          navbarToggler.addEventListener('click', () => {
+              navbar.classList.toggle('active');
+          });
+      </script>
+    
+</body>
+</html>
