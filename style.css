@@ -6,6 +6,15 @@
 
 }
 
+.container2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+
 
 body
 {
@@ -53,7 +62,7 @@ nav{
 }
 
 .custom-font-size {
-    font-size: 1000% !important; 
+    font-size: 900% !important; 
 }
 
 .name{
@@ -175,34 +184,35 @@ nav{
     border-top-left-radius: 73px; 
     border-bottom-left-radius: 73px; 
     left: 50%;
-    transform: translate(0%, 0%);
+    transform: translate(0%, 33%);
     filter: drop-shadow(8px 8px 10px gray);
+    position: fixed;
 }
 
 .year1{
-    font-size: 36px;
+    font-size: 210%;
     font-family: 'Castoro', serif;
     color:white;
-    margin-left: 60px;
+    margin-left: 8%;
 
 }
 
 .fav1{
-    font-size: 32px;
+    font-size: 190%;
     font-family: 'Libre Franklin', sans-serif;
     color:white;
-    margin-top: -20px;
-    margin-left: 250px;
+    margin-top: -3%;
+    margin-left: 30%;
 
 }
 
 .dashed1{
-    width: 730px; 
+    width: 84%; 
     height: 2px; 
     border-top: 2px dashed #ffffff;
     position: relative; 
-    margin-top: -15px;
-    margin-left: 100px;
+    margin-top: -3%;
+    margin-left: 15%;
 }
 
 .rectangle2{
@@ -217,33 +227,34 @@ nav{
     transform: translate(0%, 10%);
     z-index: -2;
     filter: drop-shadow(8px 8px 10px gray);
+    position: fixed;
 
 }
 
 .year2{
-    font-size: 36px;
+    font-size: 210%;
     font-family: 'Castoro', serif;
     color:white;
-    margin-left: 150px;
+    margin-left: 10%;
 
 }
 
 .fav2{
-    font-size: 32px;
+    font-size: 190%;
     font-family: 'Libre Franklin', sans-serif;
     color:white;
-    margin-top: -20px;
-    margin-left: 300px;
+    margin-top: -3%;
+    margin-left: 25%;
 
 }
 
 .dashed2{
-    width: 725px; 
+    width: 90%; 
     height: 2px; 
     border-top: 2px dashed #ffffff;
     position: relative; 
-    margin-top: -15px;
-    margin-left: 30px;
+    margin-top: -3%;
+    margin-left: 0%;
 }
 
 .rectangle3{
@@ -257,32 +268,33 @@ nav{
     left: 46%;
     transform: translate(0%, 20%);
     filter: drop-shadow(8px 8px 10px gray);
+    position: fixed;
 }
 
 .year3{
-    font-size: 36px;
+    font-size: 210%;
     font-family: 'Castoro', serif;
     color:white;
-    margin-left: 60px;
+    margin-left: 8%;
 
 }
 
 .fav3{
-    font-size: 32px;
+    font-size: 190%;
     font-family: 'Libre Franklin', sans-serif;
     color:white;
-    margin-top: -20px;
-    margin-left: 300px;
+    margin-top: -3%;
+    margin-left: 30%;
 
 }
 
 .dashed3{
-    width: 800px; 
+    width: 85%; 
     height: 2px; 
     border-top: 2px dashed #ffffff;
     position: relative; 
-    margin-top: -15px;
-    margin-left: 100px;
+    margin-top: -3%;
+    margin-left: 14%;
 }
 
 
@@ -907,4 +919,3 @@ nav{
     
 
 }
-
